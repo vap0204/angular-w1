@@ -6,9 +6,63 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    /* styles.css */
+
+/* styles.scss */
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #333;
+  --background-color: #f8f8f8;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+  </style>
 </head>
 <body>
   <app-root>
+  <div class="container">
     <div>
       <h2>About me</h2>
       <p>Hello,I'm Vesela Apostolova , Web Developer from Bulgaria</p>
@@ -28,10 +82,11 @@
     <div>
       <h2>Services</h2>
       <p>
-        <span>Website from Scratch (HTML,CSS,JS):500lv.</span><br>
+        <span>Website from Scratch (HTML,CSS,JS):500lv.</span>
         <span>Wordpress Website:300lv.</span>
       </p>
     </div>
+  </div>
   </app-root>
 </body>
 </html>
