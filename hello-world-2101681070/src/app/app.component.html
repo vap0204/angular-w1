@@ -1,25 +1,10 @@
 <div class="container">
-  <div>
-    <h2>About me</h2>
-    <p>Hello,I'm Vesela Apostolova , Web Developer from Bulgaria</p>
-  </div>
-  <div>
-    <h2>Hobbies</h2>
-    <p>Video Games </p>
-  </div>
-  <div>
-    <h2>Favourite Content creator</h2>
-    <a href="https://youtube.com/@MrWebDesignerAnas">Mr.WebDesigner</a>
-  </div>
-  <div>
-    <h2>About my Chanel</h2>
-    <p>Web Developing Tutorials</p>
-  </div>
-  <div>
-    <h2>Services</h2>
-    <p>
-      <span>Website from Scratch (HTML,CSS,JS):500lv.</span>
-      <span>Wordpress Website:300lv.</span>
-    </p>
+  <div class="container-item" *ngFor="let item of items">
+    <div class="container-title" (click)="toggle(item)">
+      <h3>{{ item.title }}</h3>
+    </div>
+    <div class="caontainer-content" *ngIf="item.opened" style="display: block">
+      <p>{{ item.info }}</p>
+    </div>
   </div>
 </div>
